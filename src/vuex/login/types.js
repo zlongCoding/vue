@@ -1,0 +1,8 @@
+export const USER_HOSPITAL = 'USER_HOSPITAL'
+export const USER_CONTENT = 'USER_CONTENT'
+export const USER_HOME = 'USER_HOME'
+export const USER_KESHI = 'USER_KESHI'
+export const USER_CITYALL = 'USER_CITYALL'
+export const USER_ADDCITY = 'USER_ADDCITY'
+export const USER_PHOBE = 'USER_PHOBE'
+export const USER_NAME = 'USER_NAME'
