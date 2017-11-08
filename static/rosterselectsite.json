@@ -1,0 +1,43 @@
+{
+  "success" : 0,
+  "error" : "成功",
+  "data" : [ {
+    "id" : "71cdc60c487e4b2c98b9ad700b604aba",
+    "subprojectName" : "人行工地",
+    "subprojectCode" : "ZXM1BJ17060001001",
+    "projectId" : "339da91dca644949b3319bbaa8f9a6b2",
+    "subprojectRemark" : "",
+    "subprojectExtend" : null,
+    "createUserName" : "admin",
+    "createTime" : 1497838079989,
+    "createIp" : "111.198.176.234",
+    "modifyUserName" : null,
+    "modifyTime" : null,
+    "modifyIp" : null,
+    "detsils" : null,
+    "basisString" : null,
+    "detailString" : null,
+    "basiss" : null,
+    "startDate" : 1496246400000,
+    "endDate" : null
+  }, {
+    "id" : "996cfd91c5394aab83d49b7e6f0aef2b",
+    "subprojectName" : "旭阳工地",
+    "subprojectCode" : "ZXM1BJ17060001002",
+    "projectId" : "339da91dca644949b3319bbaa8f9a6b2",
+    "subprojectRemark" : "",
+    "subprojectExtend" : null,
+    "createUserName" : "admin",
+    "createTime" : 1497838093937,
+    "createIp" : "111.198.176.234",
+    "modifyUserName" : null,
+    "modifyTime" : null,
+    "modifyIp" : null,
+    "detsils" : null,
+    "basisString" : null,
+    "detailString" : null,
+    "basiss" : null,
+    "startDate" : 1496246400000,
+    "endDate" : null
+  } ]
+}

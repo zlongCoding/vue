@@ -1,0 +1,110 @@
+#Devicedetails {
+  width: 100%;
+  height: auto;
+  background-color: #efeff4; }
+  #Devicedetails .matop20 {
+    margin-top: 0.2rem; }
+  #Devicedetails .pb20 {
+    padding-bottom: 0.2rem; }
+  #Devicedetails .pf40 {
+    padding-left: 0.4rem; }
+  #Devicedetails .disbok {
+    display: inline-block; }
+  #Devicedetails .Devicedetails-position {
+    width: 100%;
+    font-size: 0.26rem;
+    background-color: #ffffff; }
+    #Devicedetails .Devicedetails-position .position-title {
+      height: 0.8rem;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 0.8rem;
+      font-weight: bold;
+      color: #333333; }
+      #Devicedetails .Devicedetails-position .position-title div {
+        width: 0.14rem;
+        height: 0.14rem;
+        border-radius: 100%;
+        display: inline-block;
+        border: 0.03rem solid #4691d6;
+        margin-right: 0.2rem; }
+    #Devicedetails .Devicedetails-position form {
+      width: 90%;
+      margin: 0 auto; }
+      #Devicedetails .Devicedetails-position form table {
+        width: 100%;
+        table-layout: fixed; }
+        #Devicedetails .Devicedetails-position form table td {
+          word-break: break-all;
+          word-wrap: break-word; }
+        #Devicedetails .Devicedetails-position form table .field {
+          line-height: 0.8rem;
+          display: flex;
+          display: -webkit-flex;
+          border-top: 0.01rem solid #dddddd; }
+          #Devicedetails .Devicedetails-position form table .field .tdleft {
+            width: 30%;
+            color: #969696;
+            border-right: 0.01rem solid #dddddd;
+            justify-content: space-between; }
+            #Devicedetails .Devicedetails-position form table .field .tdleft img {
+              width: 0.3rem;
+              height: 0.3rem;
+              margin-top: 0.25rem;
+              margin-right: 0.1rem; }
+            #Devicedetails .Devicedetails-position form table .field .tdleft .tdle {
+              width: 0.3rem;
+              height: 0.3rem;
+              margin-top: 0.25rem;
+              margin-right: 0.1rem;
+              display: inline-block; }
+          #Devicedetails .Devicedetails-position form table .field .tdright {
+            width: 70%;
+            color: #4e4e4e; }
+          #Devicedetails .Devicedetails-position form table .field input, #Devicedetails .Devicedetails-position form table .field textarea {
+            width: 70%;
+            color: #3f3f3f;
+            text-align: right;
+            justify-content: space-between; }
+        #Devicedetails .Devicedetails-position form table .field-img {
+          height: 2rem;
+          line-height: 2rem; }
+          #Devicedetails .Devicedetails-position form table .field-img .addimg {
+            width: 1.42rem;
+            height: 1.42rem;
+            margin: 0.26rem 0.4rem; }
+        #Devicedetails .Devicedetails-position form table .fieldTop {
+          border-top: none; }
+    #Devicedetails .Devicedetails-position .cycle {
+      width: 90%;
+      margin: 0 auto;
+      line-height: 0.38rem;
+      color: #333333;
+      border-bottom: 0.01rem solid #dddddd; }
+      #Devicedetails .Devicedetails-position .cycle .sizecolor {
+        color: #979797; }
+      #Devicedetails .Devicedetails-position .cycle .dis {
+        display: inline-block; }
+      #Devicedetails .Devicedetails-position .cycle .sign {
+        color: #4691d6;
+        float: right; }
+    #Devicedetails .Devicedetails-position .borTop {
+      border-bottom: 0.01rem solid #dddddd; }
+  #Devicedetails .bott {
+    width: 4.7rem;
+    margin: 0 auto; }
+    #Devicedetails .bott .submit {
+      width: 2rem;
+      height: 0.6rem;
+      color: #ffffff;
+      font-size: 0.26rem;
+      font-weight: bold;
+      border-radius: 0.3rem;
+      background-color: #4691d6;
+      display: inline-block;
+      margin: 0.4rem 0;
+      justify-content: center; }
+    #Devicedetails .bott .marig40 {
+      margin-right: 0.4rem; }
+
+/*# sourceMappingURL=devicedetails.css.map */

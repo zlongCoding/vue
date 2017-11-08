@@ -1,0 +1,145 @@
+#home {
+  height: 100%;
+  background-color: #ffffff; }
+  #home .wx-banner {
+    height: 2.6rem;
+    width: 100%;
+    background: url("../images/wx_banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 0.2rem; }
+    #home .wx-banner span {
+      display: inline-block;
+      width: 20%;
+      height: 0.3rem;
+      line-height: 0.3rem;
+      text-align: left;
+      padding-left: 0.1rem;
+      margin-top: 0.3rem; }
+    #home .wx-banner span:first-child {
+      text-align: right;
+      padding-right: 0.1rem;
+      width: 80%;
+      border-right: 1px solid black; }
+    #home .wx-banner span:last-child {
+      padding-right: 0.2rem; }
+  #home .wx-worksite {
+    width: 100%;
+    height: 0.84rem;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #C8C7CC;
+    align-items: center;
+    box-sizing: content-box; }
+    #home .wx-worksite img {
+      width: 0.22rem;
+      height: 0.27rem;
+      padding-left: 0.2rem; }
+    #home .wx-worksite span {
+      font-size: 0.30rem;
+      display: inline-block;
+      height: 0.84rem;
+      line-height: 0.84rem;
+      color: #676767; }
+    #home .wx-worksite .wx-site {
+      width: 45%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      color: #484848; }
+    #home .wx-worksite input {
+      margin-right: 0.4rem;
+      height: 0.60rem;
+      line-height: 0.6rem;
+      width: 22%;
+      background: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 0.05rem;
+      font-size: 0.30rem; }
+  #home .wx-sb {
+    width: 100%;
+    display: flex;
+    box-sizing: content-box; }
+    #home .wx-sb div:first-child {
+      height: 1.2rem;
+      display: flex;
+      align-items: center; }
+      #home .wx-sb div:first-child img {
+        padding-left: 0.15rem;
+        width: 0.26rem;
+        height: 0.26rem; }
+    #home .wx-sb div:last-child {
+      display: flex;
+      width: 94%;
+      height: 1.2rem;
+      border-bottom: 1px solid #C8C7CC; }
+      #home .wx-sb div:last-child span {
+        display: inline-block;
+        font-size: 0.3rem;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        color: #6E6E6E; }
+      #home .wx-sb div:last-child span:nth-child(odd) {
+        margin-left: 0.1rem;
+        width: 20%; }
+      #home .wx-sb div:last-child span:nth-child(even) {
+        width: 30%;
+        color: #000000; }
+      #home .wx-sb div:last-child span:last-child {
+        margin-right: 0.2rem; }
+  #home .wx-sb:last-child div:last-child {
+    border-bottom: none; }
+  #home ul {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    overflow: hidden;
+    background: #ffffff;
+    border-top: 1px solid  #C8C7CC; }
+    #home ul li {
+      padding-top: 0.4rem;
+      text-align: center; }
+      #home ul li .wx-outer {
+        width: 1.64rem;
+        height: 1.64rem;
+        background: #ffffff;
+        border-radius: 1.63rem;
+        position: relative; }
+      #home ul li .wx-outer-ddj {
+        border: 1px solid #4691D6; }
+      #home ul li .wx-outer-ydj {
+        border: 1px solid #F9991C; }
+      #home ul li .wx-inner {
+        position: absolute;
+        width: 1.44rem;
+        height: 1.44rem;
+        line-height: 1.44rem;
+        text-align: center;
+        background: #4691D6;
+        border-radius: 1.44rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #home ul li .wx-inner span {
+          text-align: center;
+          font-size: 0.40rem;
+          color: #ffffff; }
+        #home ul li .wx-inner span:last-child {
+          font-size: 0.20rem; }
+      #home ul li .wx-inner-ddj {
+        background: #4691D6;
+        top: 0.085rem;
+        left: 0.085rem; }
+      #home ul li .wx-inner-ydj {
+        background: #F9991C;
+        top: 0.085rem;
+        left: 0.075rem; }
+      #home ul li .ddj {
+        font-size: 0.30rem;
+        color: #4691D6; }
+      #home ul li .ydj {
+        color: #F9991C;
+        font-size: 0.30rem; }
+
+/*# sourceMappingURL=home.css.map */

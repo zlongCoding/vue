@@ -1,8 +1,0 @@
-export const BANK_PHONE = 'BANK_PHONE'
-export const BANK_CARD = 'BANK_CARD'
-export const BANK_NEWCARD = 'BANK_NEWCARD'
-// export const USER_KESHI = 'USER_KESHI'
-// export const USER_CITYALL = 'USER_CITYALL'
-// export const USER_ADDCITY = 'USER_ADDCITY'
-// export const USER_PHOBE = 'USER_PHOBE'
-// export const USER_NAME = 'USER_NAME'

@@ -1,0 +1,46 @@
+#UnregisteredDevice {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4; }
+  #UnregisteredDevice .list {
+    overflow: hidden;
+    clear: both; }
+    #UnregisteredDevice .list .hard {
+      height: 0.3rem;
+      border-bottom: 0.01rem solid #c8c7cc; }
+    #UnregisteredDevice .list .unregisteredDevice-li {
+      width: 100%;
+      height: 1.6rem;
+      background-color: #ffffff;
+      border-bottom: 0.01rem solid #c8c7cc; }
+      #UnregisteredDevice .list .unregisteredDevice-li .unregisteredDevice-li-le {
+        width: 2.4rem;
+        height: 1.2rem;
+        float: left;
+        position: absolute;
+        margin-top: 0.2rem;
+        border-right: 0.01rem solid #c8c7cc; }
+        #UnregisteredDevice .list .unregisteredDevice-li .unregisteredDevice-li-le img {
+          float: left;
+          width: 1.44rem;
+          height: 1rem;
+          position: relative;
+          left: 50%;
+          top: 50%;
+          margin-left: -0.72rem;
+          margin-top: -0.5rem; }
+      #UnregisteredDevice .list .unregisteredDevice-li .unregisteredDevice-li-re {
+        width: 5.1rem;
+        height: 1.2rem;
+        float: right;
+        margin-top: 0.2rem;
+        padding-left: 0.5rem; }
+        #UnregisteredDevice .list .unregisteredDevice-li .unregisteredDevice-li-re p {
+          font-size: 0.2rem;
+          color: #656565;
+          text-align: left;
+          line-height: 0.5rem; }
+          #UnregisteredDevice .list .unregisteredDevice-li .unregisteredDevice-li-re p i {
+            color: #000000; }
+
+/*# sourceMappingURL=UnregisteredDevice.css.map */

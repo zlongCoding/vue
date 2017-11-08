@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import "mixin";
+#rosterSelectSite{
+  background-color: #fbfbfb;
+  .hard{
+    width: 100%;
+    text-align: center;
+    background-color: #0097EB;
+    overflow: hidden;
+    clear: both;
+  }
+  .list {
+    overflow: hidden;
+    clear: both;
+    & li {
+      width: 100%;
+      height: 0.8rem;
+      line-height: 0.8rem;
+      color: #000000;
+      font-size: 0.26rem;
+      background-color: #ffffff;
+      border-bottom: 0.01rem solid #c8c7cc;
+      & p {
+        float: left;
+        text-align: left;
+        padding-left: 0.4rem;
+      }
+    }
+  }
+}
+

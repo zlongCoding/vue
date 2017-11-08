@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@import "mixin";
+#Devicedetails{
+  width: 100%;
+  height: auto;
+  background-color: #efeff4;
+  .matop20{
+    margin-top: 0.2rem;
+  }
+  .pb20{
+    padding-bottom: 0.2rem;
+  }
+  .pf40{
+    padding-left: 0.4rem;
+  }
+  .disbok{
+    display: inline-block;
+  }
+  .Devicedetails-position {
+    width: 100%;
+    font-size: 0.26rem;
+    background-color: #ffffff;
+    .position-title{
+      height: 0.8rem;
+      width: 90%;
+      margin: 0 auto;
+      line-height: 0.8rem;
+      font-weight: bold;
+      color: #333333;
+
+      & div{
+        width:0.14rem;
+        height:0.14rem;
+        border-radius:100%;
+        display: inline-block;
+        border:0.03rem solid #4691d6;
+        margin-right: 0.2rem;
+      }
+    }
+    & form {
+      width: 90%;
+      margin: 0 auto;
+      & table {
+        width: 100%;
+        table-layout: fixed;
+        & td{
+          word-break: break-all;
+          word-wrap:break-word;
+        }
+        .field {
+          line-height: 0.8rem;
+          display: flex;
+          display: -webkit-flex;
+          border-top: 0.01rem solid #dddddd;
+          .tdleft {
+            width: 30%;
+            color: #969696;
+            border-right: 0.01rem solid #dddddd;
+            justify-content: space-between;
+            & img {
+              width: 0.3rem;
+              height: 0.3rem;
+              margin-top: 0.25rem;
+              margin-right: 0.1rem;
+            }
+            .tdle{
+              width: 0.3rem;
+              height: 0.3rem;
+              margin-top: 0.25rem;
+              margin-right: 0.1rem;
+              display: inline-block;
+            }
+          }
+          .tdright{
+            width: 70%;
+            color: #4e4e4e;
+          }
+          & input, textarea {
+            width: 70%;
+            color: #3f3f3f;
+            text-align: right;
+            justify-content: space-between;
+          }
+        }
+        .field-img {
+          height: 2rem;
+          line-height: 2rem;
+          .addimg {
+            width: 1.42rem;
+            height: 1.42rem;
+            margin: 0.26rem 0.4rem;
+          }
+        }
+        .fieldTop {
+          border-top: none;
+        }
+      }
+    }
+    .cycle{
+      width: 90%;
+      margin: 0 auto;
+      line-height: 0.38rem;
+      color: #333333;
+      border-bottom: 0.01rem solid #dddddd;
+      .sizecolor{
+        color: #979797;
+      }
+      .dis{
+        display: inline-block;
+      }
+      .sign{
+      color: #4691d6;
+        float: right;
+    }
+    }
+    .borTop{
+      border-bottom: 0.01rem solid #dddddd;
+    }
+  }
+  .bott {
+    width: 4.7rem;
+    margin: 0 auto;
+    .submit {
+      width: 2rem;
+      height: 0.6rem;
+      color: #ffffff;
+      font-size: 0.26rem;
+      font-weight: bold;
+      border-radius: 0.3rem;
+      background-color: #4691d6;
+      display: inline-block;
+      margin: 0.4rem 0;
+      justify-content:center;
+    }
+    .marig40{
+      margin-right: 0.4rem;
+    }
+  }
+}
+

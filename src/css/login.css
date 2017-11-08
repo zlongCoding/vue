@@ -1,0 +1,63 @@
+#login {
+  width: 100%;
+  height: 100%;
+  background: #ffffff; }
+  #login .wx_login_log {
+    width: 2.52rem;
+    height: 1.38rem;
+    padding-top: 1rem;
+    margin-left: 0.9rem; }
+    #login .wx_login_log img {
+      width: 100%; }
+  #login p {
+    text-align: center;
+    margin-top: 1.1rem;
+    margin-left: 0rem;
+    font-size: 0.44rem;
+    color: #333333;
+    font-family: "Microsoft YaHei"; }
+  #login #form {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 999; }
+    #login #form tr .wx-user {
+      width: 0.4rem;
+      position: absolute;
+      top: 0.1rem;
+      left: 1.28rem; }
+      #login #form tr .wx-user img {
+        width: 100%; }
+    #login #form tr .wx-psd {
+      width: 0.4rem;
+      position: absolute;
+      top: 1.69rem;
+      left: 1.28rem; }
+      #login #form tr .wx-psd img {
+        width: 100%; }
+    #login #form tr input {
+      border: 1px solid #4691D6;
+      width: 5.68rem;
+      height: 0.93rem;
+      border-radius: 0.465rem;
+      font-size: 0.30rem;
+      padding-left: 1rem; }
+    #login #form tr .fignIn {
+      border: 1px solid #4691D6;
+      width: 5.68rem;
+      height: 0.93rem;
+      border-radius: 0.465rem;
+      background: #4691D6;
+      color: #ffffff;
+      font-size: 0.32rem;
+      padding-left: 0rem; }
+  #login .wx_login_bgd {
+    height: 100%; }
+    #login .wx_login_bgd img {
+      position: absolute;
+      bottom: 0;
+      width: 100%; }
+
+/*# sourceMappingURL=login.css.map */

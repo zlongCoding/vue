@@ -1,0 +1,10 @@
+{
+  "success" : 0,
+  "error" : "成功",
+  "data" : {
+    "appId":"wx5f24fa0db1819ea2",
+    "timestamp":"1502261691",
+    "nonceStr":"uQtWzF0bQtl2KRHX0amekjpq8L0aO96LSpSNfctOBLRbuYPO4DUBhMn0_v2jHS-9",
+    "signature":"da809c1572df45461e03b84e4891e52d570b58f8"
+  }
+}
