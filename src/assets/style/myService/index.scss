@@ -1,0 +1,378 @@
+@import "../px2rem.scss";
+#myService{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+.myServicenone{
+  color: rgba(255, 0, 0, 0.67);
+  font-size:24px;
+  margin: 10px 0;
+}
+.myServicenull{
+  // font-size
+  span{
+    color: rgba(255, 0, 0, 0.67);
+  }
+}
+.contentPage{
+      width: 100%;
+    color: #999999;
+}
+.service-contentPage{
+        padding-left: 0px;
+          padding-right: 30px;
+          line-height: 18px;
+          margin: 8px 0px 2px 0px;
+       
+}
+.servicePack {
+  background-color: #FFFFFF;
+  margin-top: 20px;
+  .servicePackHead {
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    font-size: 16px;
+    .packageTime {
+      font-size: 12px;
+      color: #666666;
+    }
+    .isValid {
+      float: right;
+      color: #ee6f46;
+    }
+  }
+  .coupon {
+    .couponContent {
+      width: 100%;
+      height: 100px;
+      margin: 0px auto;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100% !important;
+      background: url('../../assets/images/available.png');
+      overflow: hidden;
+      color: #FFFFFF;
+      .couponContentLeft {
+        width: 64%;
+        float: left;
+        padding-left: 3%;
+        .title {
+          font-size: 20px;
+          margin-top: 20px;
+        }
+        .time {
+          font-size: 12px;
+          line-height: 18px;
+          margin-top: 10px;
+          div {
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .couponContentRight {
+        width: 33%;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        div:nth-child(1) {
+          margin-top: 20px;
+          span {
+            font-size: 36px;
+          }
+        }
+        div:nth-child(2) {
+          margin-top: 5px;
+        }
+      }
+    }
+    .couponContent-Invalid {
+      width: 100%;
+      height: 100px;
+      margin: 0px auto;
+      background-repeat: no-repeat !important;
+      background-size: 100% 100% !important;
+      background: url('../../assets/images/available-no.png');
+      overflow: hidden;
+      color: #999999;
+      .couponContentLeft {
+        width: 64%;
+        float: left;
+        padding-left: 3%;
+        .title {
+          font-size: 20px;
+          margin-top: 20px;
+        }
+        .time {
+          font-size: 12px;
+          line-height: 18px;
+          margin-top: 10px;
+          div {
+            width: 90%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+      .couponContentRight-Invalid {
+        width: 33%;
+        text-align: center;
+        float: left;
+        font-size: 14px;
+        div {
+          margin-top: 35px;
+        }
+        a {
+          margin-top: 10px;
+          text-decoration: underline;
+          display: block;
+        }
+      }
+    }
+  }
+  ul {
+    padding: 0px;
+    margin: 0px;
+    .serviceList {
+      height: 100px;
+      padding: 15px 10px;
+      border-top: 1px solid #EEEEEE;
+      position: relative;
+      overflow: hidden;
+      .serviceListImg {
+        position: absolute;
+        top: 20px;
+        left: 10px;
+        width: 130px;
+        height: 100px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .serviceContent {
+        padding-left: 150px;
+        padding-right: 0px;
+        overflow: hidden;
+        .service-head {
+          width: 100%;
+          overflow: hidden;
+          height:20px;
+          line-height:20px;
+          margin-top: 12px;
+          .title {
+            float: left;
+            color: #000000;
+            font-size: 18px;
+          }
+          .prompt {
+            float: left;
+            font-size: 12px;
+            color: #13d9c8;
+            border: 1px solid #13d9c8;
+            margin-left: 3px;
+            padding: 2px 5px;
+          }
+        }
+        .contentTexts{
+            width: 100%;
+            color: #999999;
+        }
+        .servicecontent{
+          padding-left: 0px;
+          padding-right: 10px;
+          line-height: 16px;
+          margin: 8px 0px 2px 0px;
+        }
+        .service-content {
+          padding-left: 0px;
+          padding-right: 30px;
+          line-height: 18px;
+          margin: 8px 0px 2px 0px;
+          height: 36px;
+          .contentText {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            color: #999999;
+          }
+          i {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: url("../../assets/images/arrow.png") top left no-repeat;
+            background-position: 0px 0px;
+            background-size: 15px;
+            position: absolute;
+            top: 60px;
+            right: 5px;
+          }
+        }
+        .service-bottom {
+          overflow: hidden;
+          .frequency {
+            float: left;
+            span {
+              font-size: 28px;
+              color: #13d9c8;
+            }
+          }
+          .expire {
+            float: right;
+            margin-right: 10px;
+            margin-top: 20px;
+          }
+        }
+        .service-active {
+          .frequency {
+            color: #999999;
+            span {
+              color: #999999;
+            }
+          }
+        }
+      }
+      .mask {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #EEEEEE;
+        opacity: 0.5;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+      }
+      .icon-mask {
+
+      }
+    }
+    .refund {
+      width: 100%;
+      padding: 15px 0px;
+      border-top: 1px solid #EEEEEE;
+      overflow: hidden;
+      .btn {
+        margin: 0px;
+        width: auto;
+        background: #13d9c8;
+        border: none;
+        color: #fff;
+        padding: 3px 10px;
+        font-size: 16px;
+        border-radius: 2px;
+        float: right;
+      }
+      .btn-disabled {
+        margin: 0px;
+        width: auto;
+        background: #FFFFFF;
+        border: 1px solid #cccccc;
+        color: #cccccc;
+        padding: 3px 10px;
+        font-size: 16px;
+        border-radius: 2px;
+        float: right;
+      }
+      .btn-ref{
+        float: right;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.explain {
+  padding: 25px 10px;
+  margin-bottom: 71px;
+  h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .explainList {
+    color: #666666;
+    overflow: hidden;
+    height: auto;
+    padding: 3px 0px;
+    line-height: 16px;
+    span {
+      float: left;
+    }
+    p {
+      overflow: hidden;
+      top: 0px;
+      display: block;
+    }
+  }
+}
+
+.serviceRefund {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #FFFFFF;
+  padding: 15px 0px;
+  overflow: hidden;
+  z-index: 10;
+  .money {
+    float: left;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 10px;
+    .moneyLeft {
+      color: #000000;
+      font-size: 16px;
+      float: left;
+    }
+    .moneyRight {
+      float: left;
+      color: #ee6f46;
+      font-size: 22px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .btn {
+    width: 100px;
+    float: right;
+    padding: 10px 0px;
+    margin: 0px 10px 0px 0px;
+  }
+}
+
+.mint-msgbox-content {
+  .mint-msgbox-message {
+    text-align: left;
+    line-height: 22px;
+  }
+}
+.myServiceImg{
+  width: 100%;
+  height: 100%;
+      position: fixed;
+  text-align: center;
+  img{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 150px auto 20px auto;
+  }
+  .myServiceText {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .returnBtn{
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+  }
+}

@@ -1,0 +1,78 @@
+@import "../px2rem.scss";
+
+.noData {
+	font-size: 16px;
+	padding-top: 50px;
+	text-align: center;
+	color: #999;
+    line-height: 2em;
+}
+
+#selectDealer {
+	ul {}
+
+	li {
+		width: 100%;
+		padding: 20px 0;
+		background: #fff;
+		margin-bottom: px2Rem(12px);
+		padding: 10px 15px;
+		position: relative;
+		font-size: 14px;
+		box-sizing: border-box;
+	}
+
+	.checkbox-input {
+		display: none;
+	}
+
+	.checkbox-core {
+        background:url('../../assets/images/radiobuttonnor.png') center center no-repeat;
+	}
+
+	.checkbox-label {
+		vertical-align: middle;
+		margin-left: 2%;
+		width: 88%;
+	}
+
+	section {
+		line-height: 20px;
+	}
+
+	p {
+		color: #888;
+		font-size: 12px;
+		margin-top: 10px;
+	}
+
+	u {
+		text-decoration: none;
+		font-size: 12px;
+		color: #888888;
+	}
+
+	span {
+		display: inline-block;
+	}
+
+	b {
+		display: inline-block;
+		width: 8%;
+		span{
+	    display: inline-block;
+		border-radius: 100%;
+		position: relative;
+		width: 22px;
+		height: 22px;
+
+		vertical-align: middle;
+		right: 0;
+		 background-size:22px !important;
+		}
+	}
+
+	.checkout {
+	  background:url('../../assets/images/radiobuttonselect.png') center center no-repeat;
+	}
+}

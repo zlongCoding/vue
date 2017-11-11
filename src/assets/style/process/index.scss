@@ -1,0 +1,99 @@
+#processContainer {
+	padding-top: 50px;
+}
+
+#processContainerWrap {
+	width: 50%;
+	padding-top: 50%;
+	margin: 0 auto;
+	position: relative;
+
+	.process {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+.tip {
+	text-align: center;
+	margin-top: 50px;
+	color: #999;
+	h3{
+		color: #666;
+		margin-bottom: 10px;
+	}
+}
+
+$circle-size: 180px;
+$circle-background: #D9D9D9;
+$circle-color: #1ed2c9;
+$inset-size: 165px;
+$inset-color: #ebeff8;
+$transition-length: 1s;
+
+.ko-progress-circle {
+	margin: 0 auto;
+	width: $circle-size;
+	height: $circle-size;
+	background-color: $circle-background;
+	border-radius: 50%;
+
+	.ko-progress-circle__fill,
+	.ko-progress-circle__slice {
+		width: $circle-size;
+		height: $circle-size;
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		transition: transform $transition-length;
+		border-radius: 50%;
+	}
+
+	.ko-progress-circle__slice {
+		clip: rect(0px, $circle-size, $circle-size, $circle-size/2);
+
+		.ko-progress-circle__fill {
+			clip: rect(0px, $circle-size/2, $circle-size, 0px);
+			background-color: $circle-color;
+		}
+	}
+
+	.ko-progress-circle__overlay {
+		width: $inset-size;
+		height: $inset-size;
+		position: absolute;
+		margin-left: ($circle-size - $inset-size)/2;
+		margin-top: ($circle-size - $inset-size)/2;
+		background-color: $inset-color;
+		border-radius: 50%;
+
+		h5 {
+			position: absolute;
+			left: 0;
+			display: block;
+			right: 0;
+			height: 100%;
+			text-align: center;
+			line-height: 174px;
+			font-size: 24px;
+			color: #888;
+		}
+	}
+	$i: 0;
+	$increment: 180deg / 100;
+	@while $i <= 100 {
+		&[data-progress='#{$i}'] {
+			.ko-progress-circle__fill,
+			.ko-progress-circle__slice.full {
+				transform: rotate($increment * $i);
+			}
+
+			.ko-progress-circle__fill.ko-progress-circle__bar {
+				transform: rotate($increment * $i * 2);
+			}
+			$i: $i + 1;
+		}
+	}
+}

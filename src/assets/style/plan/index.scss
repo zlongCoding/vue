@@ -1,0 +1,94 @@
+.plan {
+	background: #fff;
+	border-bottom: 1px solid #eeeeee;
+
+	h3 {
+		height: 50px;
+		position: relative;
+		line-height: 54px;
+		padding-left: 15px;
+		font-size: 16px;
+		border-bottom: 1px solid #eeeeee;
+
+		span {
+			font-size: 12px;
+			color: #999;
+			font-weight: normal;
+		}
+
+		button {
+			color: #00D4BE;
+			border: 1px solid #00D4BE;
+			background: none;
+			border-radius: 2px;
+			font-size: 14px;
+			height: 34px;
+			padding: 0 8px;
+			outline: none;
+			right: 15px;
+			position: absolute;
+			top: 8px;
+		}
+	}
+
+	ul {
+		margin-left: 30px;
+
+		li {
+			border-bottom: 1px solid #eeeeee;
+			min-height: 40px;
+			position: relative;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			h4 {
+				b {
+					display: block;
+					height: 40px;
+					line-height: 40px;
+				}
+
+				span {
+					font-weight: normal;
+					position: absolute;
+					color: #999;
+					right: 15px;
+					top: 15px;
+				}
+			}
+
+			table {
+				background: #f5f7fb;
+				width: calc(100% - 15px);
+				border-radius: 4px;
+				margin-bottom: 15px;
+				color: #999999;
+
+				tr {
+					td {
+						padding: 7px 10px;
+						font-size: 12px;
+
+						&:nth-child(2),
+						&:nth-child(3) {
+							text-align: right;
+						}
+
+						span {
+							background: #d2d8e6 url('../../assets/images/correct.png') top left no-repeat;
+							background-size: 14px;
+							background-position: 3px 3px;
+							color: #ffffff;
+							display: inline-block;
+							padding: 4px 5px 4px 20px;
+							line-height: 1;
+							border-radius: 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

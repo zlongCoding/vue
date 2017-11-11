@@ -1,0 +1,42 @@
+@import "../px2rem.scss";
+
+#buySuccess{
+	height: px2Rem(404px);
+	width: 100%;
+	background: url("../../assets/images/success.png") no-repeat;
+	background-size:100% auto;
+	position: absolute;
+	top: 0;
+	color:#e86044;
+	div{
+		width: 90%;
+        height: px2Rem(42px);
+        background: #eee;
+        text-align: center;
+        background: #e86044;
+        line-height: px2Rem(42px);
+        color:#fff;
+        position: absolute;
+        bottom:  px2Rem(36px);
+        left: 50%;
+        font-size: 20px;
+        margin-left:  -45%;
+        border-radius: 1px;
+	}
+	section{
+		position: absolute;
+		left: 25%;
+		top: 28%;
+	}
+	p{
+
+	}
+	p:nth-child(2){
+		margin-top: px2Rem(13px);
+		margin-left:  px2Rem(45px);
+		font-size: 20px;
+		span{
+          font-size: 30px;
+		}
+	}
+}

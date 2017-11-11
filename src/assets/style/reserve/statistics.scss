@@ -1,0 +1,98 @@
+@import "../px2rem.scss";
+
+.inner-content {
+  .icon {
+    background: url("../../assets/images/home.png") no-repeat #fff;
+    background-size: cover;
+    width: px2Rem(22px);
+    height: px2Rem(22px);
+  }
+  div.upper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: px2Rem(10px);
+    div.left {
+      margin-left: px2Rem(5px);
+      div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: px2Rem(5px);
+        div {
+          margin-bottom: 0;
+        }
+        div.icon1 {
+          background-position: 0px px2Rem(-379px);
+        }
+        div.icon2 {
+          background-position: 0px px2Rem(-356px);
+        }
+      }
+    }
+    div.right {
+      margin-right: px2Rem(16px);
+      div {
+        margin-bottom: px2Rem(5px);
+        span:nth-of-type(1) {
+          font-size: px2Rem(36px);
+          color: #00D4BE;
+        }
+      }
+      p {
+        text-align: center;
+        margin-top: px2Rem(10px);
+        color: #8C8C8C;
+      }
+    }
+  }
+  div.lower {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    padding-right: px2Rem(22px);
+    & > div {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-top: px2Rem(12px);
+      padding-bottom: px2Rem(12px);
+      border-bottom: 1px solid #D5DAED;
+      &:nth-of-type(3) {
+        border-right: none;
+      }
+      div.text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-size: px2Rem(12px);
+      }
+      .icon3 {
+        background-position: 0 px2Rem(-235px);
+      }
+      .icon4 {
+        background-position: 0 px2Rem(-280px);
+      }
+      .icon5 {
+        background-position: 0 px2Rem(-327px);
+      }
+    }
+  }
+}

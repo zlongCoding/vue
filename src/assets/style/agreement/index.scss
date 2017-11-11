@@ -1,0 +1,24 @@
+pre {
+	white-space: pre-wrap;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+#agreement {
+	background: #fff;
+	width: auto;
+	overflow: hidden;
+	padding: 10px;
+
+	table {
+		border: 1px solid #333;
+		width: 100%;
+		text-align: center;
+		background: #fff;
+	}
+
+	td {
+		padding: 3px;
+		border: 1px solid #333;
+	}
+}

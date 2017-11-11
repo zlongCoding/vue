@@ -1,0 +1,30 @@
+  .wirte-address{
+    width: 100%;
+    background: #fff;
+    padding: 20px 0;
+    color:#f7c52d;
+    font-size: 14px;
+    position: relative;
+  }
+ .wirte-address div{
+     padding-left: 15px;
+     color: #888888;
+     margin-top: 10px;
+  }
+.wirte-address  p{
+   text-align: left;
+    padding-left: 15px;
+    color: #414141;
+ }
+ i{
+   position: absolute;
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   background: url("../assets/images/arrow.png") top left no-repeat;
+   background-position: 0px 0px;
+   background-size: 20px;
+    right: 6px;
+    top: 50%;
+    margin-top: -10px;
+ }

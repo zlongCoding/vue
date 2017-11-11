@@ -1,0 +1,97 @@
+@import "../px2rem.scss";
+body {
+    background-color: #fff !important;
+}
+
+.reserve {
+    .nolist {
+        img{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 80px;    
+        }
+        p{
+            text-align: center;
+            margin-top: 35px;
+            font-size: 20px;
+            color: #969698;
+        }
+    }
+    .big-show {
+        text-align: center;
+        font-size: px2Rem(12px);
+        color: #fff;
+        background-image: url('../../assets/images/reserve.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: px2Rem(20px);
+        h1 {
+            margin: px2Rem(18px) auto;
+            font-size: px2Rem(30px);
+            color: #6DD3C8;
+            span:nth-of-type(2) {
+                font-size: px2Rem(24px);
+                text-decoration: none;
+                margin-left: px2Rem(-8px);
+            }
+            span:nth-of-type(3) {
+                font-size: px2Rem(16px);
+                text-decoration: none;
+            }
+        }
+    }
+    p.text {
+        padding: px2Rem(10px);
+        background-color: #eee;
+    }
+    .date-list {
+        background-color: #fff;
+        padding-top: 10px;
+        ul.item-container {
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: #13D9C8;
+                left: px2Rem(10px);
+                margin-left: 5px;
+            }
+            li {
+                position: relative;
+                time {
+                    position: absolute;
+                    left: px2Rem(24px);
+                    top: -1px;
+                    color: #13D9C8;
+                }
+                div.circle {
+                    width: 10px;
+                    height: 10px;
+                    border: 1px #13D9C8 solid;
+                    border-radius: 100px;
+                    left: px2Rem(10px);
+                    position: absolute;
+                    background: #fff;
+                }
+                div.item-content {
+                    margin-bottom: px2Rem(20px);
+                    overflow: hidden;
+                    div {
+                        height: px2Rem(126px);
+                        margin-left: px2Rem(50px);
+                        margin-top: px2Rem(20px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mint-indicator-leave-active {
+  display: none
+}

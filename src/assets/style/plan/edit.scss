@@ -1,0 +1,126 @@
+@import "../px2rem.scss";
+
+#planEdit{
+  h5 {
+    color: #666666;
+    font-weight: normal;
+    padding: 13px 10px 5px;
+    position: relative;
+    font-size: 12px;
+  }
+  .cellList{
+    ul{
+      li{
+        height: 40px;
+        .arrow-right{
+          display: inline-block;
+          width: 18px;
+          height: 18px;
+          background-size: 18px !important;
+          position:absolute;
+          right:6px;
+          top:14px;
+          background: url("../../assets/images/arrow.png") top left no-repeat;
+          background-position-y: -18px;
+        }
+        .tip{
+          position: absolute;
+          left: px2Rem(158px);
+          top: 10px;
+          background: #13d9c8;
+          padding: 3px;
+        }
+        .tipOpacity{
+          opacity: 0.2
+        }
+        .text{
+          position: relative;
+          font-style: normal;
+          top: 2px;
+          color: #fff;
+          margin-left: -2px;
+        }
+        &.expand{
+          text-align: center;
+          div{
+            line-height: 40px;
+            color: #13D9C8;
+            i{
+              font-style: normal;
+              display: inline-block;
+              position: relative;
+              & .tip{
+                position: absolute;
+                left: 208px;
+                top: 10px;
+                background: #13d9c8;
+              }
+              &.d-arrow-down{
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 12px;
+                background: url("../../assets/images/double-arrow.png") no-repeat;
+                background-size: cover;
+              }
+              &.d-arrow-up{
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                top: 12px;
+                background: url("../../assets/images/double-arrow.png") no-repeat;
+                background-size: cover;
+                background-position-y: -14px;
+              }
+            }
+          }
+        }
+        b{
+          height: 40px;
+          line-height: 40px;
+        }
+        .checkbox-core {
+          display: inline-block;
+          background-color: #fff;
+          border-radius: 100%;
+          border: 1px solid #ccc;
+          position: relative;
+          width: 16px;
+          height: 16px;
+          top: 1px;
+          vertical-align: middle;
+          right: 0;
+          &:after {
+            border: 2px solid transparent;
+            border-left: 0;
+            border-top: 0;
+            content: " ";
+            top: 4px;
+            left: 6px;
+            position: absolute;
+            width: 2px;
+            height: 6px;
+            -webkit-transform: rotate(45deg) scale(0);
+            transform: rotate(45deg) scale(0);
+            -webkit-transition: -webkit-transform .2s;
+            transition: -webkit-transform .2s;
+            transition: transform .2s;
+            transition: transform .2s,-webkit-transform .2s;
+          }
+        }
+        .checkout{
+          border: none;
+          background: #fff;
+          &:after{
+            border-color: #13d9c8;
+            transform: rotate(45deg) scale(1);
+            -webkit-transform: rotate(45deg) scale(1);
+          }
+        }
+      }
+    }
+  }
+  .btn{
+    margin-top: 20px;
+  } 
+}
