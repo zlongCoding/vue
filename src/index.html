@@ -1,52 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <title></title>
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telphone=no, email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
     <meta name="theme-color" content="#f60">
-    <script>
-      (function (doc, win) {
-        var docEl = doc.documentElement,
-          resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
-          recalc = function () {
-            var clientWidth = docEl.clientWidth;
-            if (!clientWidth) return;
-            docEl.style.fontSize = 14 * (clientWidth / 375) + 'px';
-          };
-
-        if (!doc.addEventListener) return;
-        win.addEventListener(resizeEvt, recalc, false);
-        doc.addEventListener('DOMContentLoaded', recalc, false);
-      })(document, window);
+    <meta name="format-detection" content="telephone=no" />
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+    <script type="text/javascript">
+      window.wx = wx
     </script>
-    <!-- <script type="text/javascript" src="/banma/static/polyfill.min.js"></script> -->
   </head>
   <body>
     <div id="app">
       <navbar></navbar>
-      <div id="main">
-        <router-view></router-view>
-      </div>
+      <router-view></router-view>
     </div>
     <!-- built files will be auto injected -->
-		<!-- Piwik -->
-		<script type="text/javascript">
-       window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//pkapp.insaic.com:18443/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        _paq.push(['setSiteId', '1']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-      })();
-		</script>
-		<!-- End Piwik Code -->
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=1KZpzC7xnYTByOfPA8xcDsF7xrXLgAas"></script>
   </body>
 </html>

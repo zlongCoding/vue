@@ -4,11 +4,11 @@ var path = require('path')
 module.exports = {
   build: {
     env: require('./prod.env'),
-    index: path.resolve(__dirname, '../src/main/webapp/banma/index.html'),
-    assetsRoot: path.resolve(__dirname, '../src/main/webapp/banma/'),
+    index: path.resolve(__dirname, '../dist/writeoff/index.html'),
+    assetsRoot: path.resolve(__dirname, '../dist/writeoff/'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/banma/',
-    productionSourceMap: false,
+    assetsPublicPath: '/writeoff/',
+    productionSourceMap: true,
     // Gzip off by default as many popular static hosts such as
     // Surge or Netlify already gzip all static assets for you.
     // Before setting to `true`, make sure to:
@@ -21,122 +21,18 @@ module.exports = {
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report
   },
-  mock: {
-    proxyTable: {
-      '/mock': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/mock': '/mock'
-        }
-      },
-      '/partner': {
-        target: 'https://mdev.insaic.com',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/partner': '/partner'
-        }
-      },
-      '/auto': {
-        target: 'https://mdev.insaic.com',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/auto': '/auto'
-        }
-      },
-      '/ubi': {
-        target: 'https://mdev.insaic.com',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/ubi': '/ubi'
-        }
-      },
-      '/auth': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/auth': '/auth'
-        }
-      }
-    }
-  },
   dev: {
     env: require('./dev.env'),
-    port: 8080,
+    port: 1984,
     autoOpenBrowser: true,
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/partner': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
+      '/writeoff-web-api': {
+        target: 'https://mdev.insaic.com',
         changeOrigin: true,
         pathRewrite: {
-          '^/partner': '/partner'
-        }
-      },
-      '/auto': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/auto': '/auto'
-        }
-      },
-      '/ubi': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/ubi': '/ubi'
-        }
-      },
-      '/auth': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/auth': '/auth'
-        }
-      },
-      '/product': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/product': '/product'
-        }
-      },
-      '/order': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/order': '/order'
-        }
-      },
-      '/vouchers': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/vouchers': '/vouchers'
-        }
-      },
-      '/staticpage': {
-        // target: 'https://mdev.insaic.com',
-        // target: 'http://10.118.22.91:8020',
-        target: 'http://112.65.104.117:7443',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/staticpage': '/staticpage'
+          '^/writeoff-web-api': '/writeoff-web-api'
         }
       }
     },

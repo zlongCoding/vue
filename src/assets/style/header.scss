@@ -1,10 +1,42 @@
 #header {
 	#processBar {
-		background: #2196F3;
+		background: #03a9f4;
 		height: 2px;
 		position: fixed;
 		z-index: 1000;
 		left: 0;
 		width: 0;
+		top: 0px;
+	}
+
+	.fullMask {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 2000;
+		left: 0px;
+
+		._loading {
+			margin-top: 100px;
+		}
+
+		.error {
+			background: url("../assets/images/fail.png") center center no-repeat;
+			background-size: 95px 100px;
+			height: 100px;
+			margin-top: 50px;
+			padding-top: 150px;
+			text-align: center;
+			font-size: 16px;
+			color: #e76043;
+		}
+
+		button {
+			width: 80%;
+			font-size: 16px;
+			margin: 45px 10% 10px;
+			padding: 10px;
+		}
 	}
 }

@@ -1,0 +1,43 @@
+.invoice {
+  background-color: #13D9C8;
+  overflow: hidden;
+  height: 100%;
+  .inner {
+    margin: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    >div {
+      background-image: linear-gradient(to right, #13D9C8 50%, rgba(255, 255, 255, 0) 0%);
+      background-position: bottom;
+      background-size: 10px 1px;
+      background-repeat: repeat-x;
+      background-color: #fff;
+      >div {
+        display: flex;
+        justify-content: space-between;
+        p {
+          font-size: 0.9rem;
+          margin: 10px;
+        }
+      }
+    }
+    .eq {
+      width: 200px;
+      height: 200px;
+      background: url("../../assets/images/EQ.png")  no-repeat;
+      background-size: contain;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    input {
+      margin: 0 auto;
+      display: block;
+      background: #13D9C8;
+      border: none;
+      color: #fff;
+      height: 1.5rem;
+      width: 5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

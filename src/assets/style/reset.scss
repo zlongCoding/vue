@@ -74,6 +74,12 @@ video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  min-height: 100%;
 }
 
 body {
@@ -82,6 +88,7 @@ body {
   font-size: 14px;
   font-family: San Francisco, -apple-system, BlinkMacSystemFont, '.SFNSText-Regular', sans-serif;
   -webkit-font-smoothing: subpixel-antialiased;
+  background: #eceff8;
 }
 
 input {
@@ -182,11 +189,20 @@ a {
   color: #13d9c8;
 }
 
-body {
-  background: #ebeff8;
+::-webkit-input-placeholder {
+    color:    #bbb;
 }
-#main{
-  max-width: 768px;
-  width: 100%;
-  margin: 0px auto;
+:-moz-placeholder {
+   color:    #bbb;
+   opacity:  1;
+}
+::-moz-placeholder {
+   color:    #bbb;
+   opacity:  1;
+}
+:-ms-input-placeholder {
+   color:    #bbb;
+}
+::-ms-input-placeholder {
+   color:    #bbb;
 }

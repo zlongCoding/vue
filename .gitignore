@@ -1,3 +1,6 @@
+# OSX
+#
 .DS_Store
 node_modules/
-npm_debug.log
+npm-debug.log
+dist/

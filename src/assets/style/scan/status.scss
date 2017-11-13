@@ -1,0 +1,57 @@
+.status {
+	&.success {
+		span {
+			background: url("../../assets/images/success.png") center center no-repeat;
+			background-size: 80px;
+			border-radius: 50%;
+		}
+	}
+
+	&.fail {
+		span {
+			background: url("../../assets/images/fail.png") center center no-repeat;
+			background-size: 95px 100px;
+			width: 95px;
+			height: 100px;
+		}
+
+		p {
+			color: #e76043;
+			font-weight: normal;
+			font-size: 18px;
+		}
+	}
+	background: #fff;
+	min-height: 100%;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+
+	p {
+		display: block;
+		font-weight: bold;
+		font-size: 16px;
+		color: #888888;
+		margin-bottom: 10px;
+	}
+
+	label {
+		color: #888888;
+		font-size: 16px;
+	}
+
+	span {
+		display: block;
+		width: 80px;
+		height: 80px;
+		margin: 60px auto 30px;
+	}
+
+	button {
+		display: block;
+		width: 80%;
+		margin: 50px 10% 30px;
+		padding: 10px;
+		font-size: 16px;
+	}
+}

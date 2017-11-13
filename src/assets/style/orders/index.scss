@@ -1,0 +1,221 @@
+#demo {
+	background: blue;
+	color: #fff;
+}
+
+.balance {
+	background: #13d9c8;
+	height: 220px;
+	color: #81fff4;
+	font-size: 14px;
+	position: relative;
+
+	p {
+		text-align: center;
+		margin: 0 auto 10px;
+		padding-top: 50px;
+	}
+
+	.count {
+		font-size: 32px;
+		color: #fff;
+		display: block;
+		text-align: center;
+		font-weight: normal;
+
+		small {
+			font-size: 24px;
+		}
+	}
+
+	ul {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		background: #15dfcf;
+
+		li {
+			width: 33.33333333%;
+			float: left;
+			height: 70px;
+
+			span {
+				display: block;
+				font-size: 14px;
+				margin: 10px 0 7px 10px;
+			}
+
+			u {
+				color: #fff;
+				text-decoration: none;
+				font-size: 24px;
+				display: block;
+				margin-left: 10px;
+
+				small {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+.tab {
+	list-style: none;
+	overflow: hidden;
+	background: #fff;
+	margin-top: 10px;
+
+	li {
+		float: left;
+		width: 20%;
+		height: 54px;
+		text-align: center;
+		color: #999999;
+		position: relative;
+		border-bottom: 1px solid #e6e7ec;
+		line-height: 54px;
+
+		&::after {
+			display: block;
+			content: '';
+			height: 24px;
+			width: 1px;
+			background: #eeeeee;
+			position: absolute;
+			right: 0;
+			top: 15px;
+		}
+
+		&.current {
+			color: #11daca;
+			font-weight: bold;
+			border-bottom: 2px solid #11daca;
+		}
+
+		&:last-child {
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+.noData {
+	background: #fff;
+	padding-top: 20px;
+
+	p {
+		display: block;
+		background: url("../../assets/images/noData1.png") top center no-repeat;
+		background-size: 140px 150px;
+		width: 300px;
+		text-align: center;
+		height: 50px;
+		padding: 170px 0 40px;
+		margin: 0 auto;
+		font-size: 18px;
+		color: #ea6043;
+	}
+
+	button {
+		width: 80%;
+		margin: 20px 10%;
+		font-size: 16px;
+		padding: 10px;
+	}
+}
+
+.loadDone {
+	height: 40px;
+	text-align: center;
+	line-height: 33px;
+	color: #999;
+}
+
+.orderList {
+	li {
+		background: #fff;
+		margin-bottom: 10px;
+
+		.title {
+			border-bottom: 1px solid #eceff8;
+			height: 40px;
+			line-height: 40px;
+			padding-left: 38px;
+			font-size: 16px;
+			background: url("../../assets/images/type.png") top left no-repeat;
+			background-size: 40px 160px;
+
+			&.LOGO_WRITEOFF_LACQUER {
+				background-position: 0 -40px;
+			}
+
+			&.LOGO_WRITEOFF_COUPON {
+				background-position: 0 -80px;
+			}
+
+			&.LOGO_WRITEOFF_TEST {
+				background-position: 0 -120px;
+			}
+
+			span {
+				float: right;
+				padding-right: 15px;
+				color: #e06a3c;
+				font-size: 14px;
+			}
+		}
+
+		.des {
+			background: #f8f9fd;
+			border-bottom: 1px solid #eceff8;
+			padding: 25px 15px;
+			position: relative;
+
+			p {
+				font-size: 16px;
+				margin-bottom: 8px;
+				color: #666;
+			}
+
+			time {
+				font-size: 12px;
+				color: #888;
+				display: block;
+			}
+
+			span {
+				display: block;
+				font-weight: normal;
+				position: absolute;
+				right: 15px;
+				top: 35px;
+				font-size: 20px;
+				color: #666;
+			}
+		}
+
+		.action {
+			height: 40px;
+			text-align: right;
+
+			button {
+				margin-right: 15px;
+				margin-top: 8px;
+				min-width: 60px;
+			}
+		}
+	}
+}
+@media screen and (max-width : 370px) {
+	.balance ul li span {
+		font-size: 13px;
+		margin: 16px 0 7px 10px;
+	}
+
+	.balance ul li u {
+		font-size: 18px;
+	}
+}
