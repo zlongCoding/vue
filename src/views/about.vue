@@ -1,5 +1,5 @@
 <template>
-  <div>welcome to zyl's blog</div>
+  <div>this is about page</div>
 </template>
 
 <script>
@@ -9,4 +9,3 @@ export default {
   }
 }
 </script>
-
