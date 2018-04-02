@@ -1,18 +1,18 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import middlewares from './middlewares'
-import login from './login'
-import account from './account'
-const debug = process.env.NODE_ENV !== 'production'
-Vue.use(Vuex)
-Vue.config.debug = debug
-Vue.config.warnExpressionErrors = false
 
-export default new Vuex.Store({
-  modules: {
-    login,
-    account
-  },
-  strict: debug,
-  middlewares
+import State from './state/index'
+import Actions from './actions/index'
+import Mutations from './mutations/index'
+
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  state: State,
+  actions: Actions,
+  mutations: Mutations
 })
+
+window.store = store
+
+export default store
