@@ -557,10 +557,6 @@ Vue.mixin({
 
 至此，全文完。
 
-## 参考
-http://csbun.github.io/blog/2016/08/vue-2-0-server-side-rendering/
-
-
 
 
 
