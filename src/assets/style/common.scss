@@ -1,0 +1,129 @@
+@import './px2rem.scss';
+
+.borderPX {
+  position: relative;
+}
+
+.borderPX:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #EDEDED;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 0;
+}
+.borderFF{
+  position:relative;
+}
+.borderFF:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background:red;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 0;
+}
+/*上边*/
+.borderPX-top {
+  position: relative;
+}
+
+.borderPX-top:after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #EDEDED;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 0;
+}
+/*右边*/
+.borderPX-right {
+  position: relative;
+}
+.borderPX-right:after {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #DEDEDE;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  right: 0;
+}
+/*左边*/
+.borderPX-left {
+  position: relative;
+}
+.borderPX-left:before {
+  content: '';
+  width: 1px;
+  height: 100%;
+  background: #DEDEDE;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  left: 0;
+}
+.clearFloat {
+  zoom: 1;
+}
+
+.clearFloat:after {
+  clear: both;
+  content: '.';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.bg-ee {
+  background: #eee;
+}
+
+.bg-ff {
+  background: #fff;
+}
+
+.color-f6f {
+  color: #f6f6f6;
+}
+.dialog-bg{
+  position: fixed;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  background:#000;
+  opacity: .2;
+  z-index:999;
+}
+/*距离底部的距离*/
+.marginNavigation{
+  margin-bottom: px2Rem(75px);
+}
+/*注册页面距离顶部的距离*/
+.appointmentMarginTop{
+   margin-top: px2Rem(50px);
+}
