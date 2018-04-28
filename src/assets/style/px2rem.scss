@@ -1,0 +1,12 @@
+$baseFontSize: 37.5px;
+@function px2Rem($px) {
+    @return $px/$baseFontSize *1rem;
+}
+
+@mixin borderRadiusNumber($number){
+	-webkit-border-radius:$number ;
+	-moz-border-radius:$number;
+	-ms-border-radius:$number;
+	-o-border-radius:$number;
+	border-radius:$number;
+}
